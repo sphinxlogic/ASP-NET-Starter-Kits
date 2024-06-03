@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<referenceMap xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns="urn:schemas-ReferenceInfo:refmap.2000-03-17">
+  <ref ref="http://localhost/LodgingMgr/LodgingReservation.asmx?sdl" path="LodgingReservation.sdl" ext=".sdl"/>
+  <ref ref="http://localhost/AirlineService/AirlineService.dll?Handler=GenAirlineServiceServiceSDL" path="AirlineService.sdl" ext=".sdl"/>
+  <ref ref="http://localhost/POILib/Order.asmx?sdl" path="Order.sdl" ext=".sdl"/>
+  <ref ref="http://localhost/POILib/Activity.asmx?sdl" path="Activity.sdl" ext=".sdl"/>
+</referenceMap>

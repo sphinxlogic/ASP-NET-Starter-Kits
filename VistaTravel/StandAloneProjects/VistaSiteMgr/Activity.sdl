@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<serviceDescription xmlns:s0="http://tempuri.org/main.xsd" xmlns:s1="" name="Activity" targetNamespace="" xmlns="urn:schemas-xmlsoap-org:sdl.2000-01-25">
+  <soap xmlns="urn:schemas-xmlsoap-org:soap-sdl-2000-01-25">
+    <service>
+      <addresses>
+        <address uri="http://localhost/POILib/Activity.asmx"/>
+      </addresses>
+      <requestResponse name="BrowseByLocationID" soapAction="http://tempuri.org/BrowseByLocationID">
+        <request ref="s0:BrowseByLocationID"/>
+        <response ref="s0:BrowseByLocationIDResult"/>
+      </requestResponse>
+      <requestResponse name="BrowseByLocation" soapAction="http://tempuri.org/BrowseByLocation">
+        <request ref="s0:BrowseByLocation"/>
+        <response ref="s0:BrowseByLocationResult"/>
+      </requestResponse>
+      <requestResponse name="BrowseServices" soapAction="http://tempuri.org/BrowseServices">
+        <request ref="s0:BrowseServices"/>
+        <response ref="s0:BrowseServicesResult"/>
+      </requestResponse>
+      <requestResponse name="BrowseByProximity" soapAction="http://tempuri.org/BrowseByProximity">
+        <request ref="s0:BrowseByProximity"/>
+        <response ref="s0:BrowseByProximityResult"/>
+      </requestResponse>
+      <requestResponse name="RefreshCategories" soapAction="http://tempuri.org/RefreshCategories">
+        <request ref="s0:RefreshCategories"/>
+        <response ref="s0:RefreshCategoriesResult"/>
+      </requestResponse>
+    </service>
+  </soap>
+  <httppost xmlns="urn:schemas-xmlsoap-org:post-sdl-2000-01-25">
+    <service>
+      <requestResponse name="BrowseByLocationID" href="http://localhost/POILib/Activity.asmx/BrowseByLocationID">
+        <request>
+          <form>
+            <input name="StartDate"/>
+            <input name="EndDate"/>
+            <input name="LocationID"/>
+            <input name="Categories"/>
+          </form>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="BrowseByLocation" href="http://localhost/POILib/Activity.asmx/BrowseByLocation">
+        <request>
+          <form>
+            <input name="StartDate"/>
+            <input name="EndDate"/>
+            <input name="City"/>
+            <input name="Region"/>
+            <input name="StateAbbr"/>
+            <input name="CountryAbbr"/>
+            <input name="Continent"/>
+            <input name="Categories"/>
+          </form>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="BrowseServices" href="http://localhost/POILib/Activity.asmx/BrowseServices">
+        <request>
+          <form>
+            <input name="ActivityID"/>
+          </form>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="BrowseByProximity" href="http://localhost/POILib/Activity.asmx/BrowseByProximity">
+        <request>
+          <form>
+            <input name="StartDate"/>
+            <input name="EndDate"/>
+            <input name="LocationID"/>
+            <input name="Distance"/>
+            <input name="Category"/>
+          </form>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="RefreshCategories" href="http://localhost/POILib/Activity.asmx/RefreshCategories">
+        <request>
+          <form/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+    </service>
+  </httppost>
+  <httpget xmlns="urn:schemas-xmlsoap-org:get-sdl-2000-01-25">
+    <service>
+      <requestResponse name="BrowseByLocationID" href="http://localhost/POILib/Activity.asmx/BrowseByLocationID">
+        <request>
+          <param name="StartDate"/>
+          <param name="EndDate"/>
+          <param name="LocationID"/>
+          <param name="Categories"/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="BrowseByLocation" href="http://localhost/POILib/Activity.asmx/BrowseByLocation">
+        <request>
+          <param name="StartDate"/>
+          <param name="EndDate"/>
+          <param name="City"/>
+          <param name="Region"/>
+          <param name="StateAbbr"/>
+          <param name="CountryAbbr"/>
+          <param name="Continent"/>
+          <param name="Categories"/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="BrowseServices" href="http://localhost/POILib/Activity.asmx/BrowseServices">
+        <request>
+          <param name="ActivityID"/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="BrowseByProximity" href="http://localhost/POILib/Activity.asmx/BrowseByProximity">
+        <request>
+          <param name="StartDate"/>
+          <param name="EndDate"/>
+          <param name="LocationID"/>
+          <param name="Distance"/>
+          <param name="Category"/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="RefreshCategories" href="http://localhost/POILib/Activity.asmx/RefreshCategories">
+        <request/>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+    </service>
+  </httpget>
+  <schema targetNamespace="http://tempuri.org/main.xsd" xmlns="http://www.w3.org/1999/XMLSchema">
+    <import namespace="http://www.w3.org/1999/XMLSchema"/>
+    <element name="BrowseByLocationID">
+      <complexType>
+        <element name="StartDate" type="string" nullable="true"/>
+        <element name="EndDate" type="string" nullable="true"/>
+        <element name="LocationID" type="long"/>
+        <element name="Categories" type="string" nullable="true"/>
+      </complexType>
+    </element>
+    <element name="BrowseByLocationIDResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="BrowseByLocation">
+      <complexType>
+        <element name="StartDate" type="string" nullable="true"/>
+        <element name="EndDate" type="string" nullable="true"/>
+        <element name="City" type="string" nullable="true"/>
+        <element name="Region" type="string" nullable="true"/>
+        <element name="StateAbbr" type="string" nullable="true"/>
+        <element name="CountryAbbr" type="string" nullable="true"/>
+        <element name="Continent" type="string" nullable="true"/>
+        <element name="Categories" type="string" nullable="true"/>
+      </complexType>
+    </element>
+    <element name="BrowseByLocationResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="BrowseServices">
+      <complexType>
+        <element name="ActivityID" type="long"/>
+      </complexType>
+    </element>
+    <element name="BrowseServicesResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="BrowseByProximity">
+      <complexType>
+        <element name="StartDate" type="string" nullable="true"/>
+        <element name="EndDate" type="string" nullable="true"/>
+        <element name="LocationID" type="long"/>
+        <element name="Distance" type="long"/>
+        <element name="Category" type="string" nullable="true"/>
+      </complexType>
+    </element>
+    <element name="BrowseByProximityResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="RefreshCategories">
+      <complexType/>
+    </element>
+    <element name="RefreshCategoriesResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+  </schema>
+  <schema targetNamespace="" xmlns="http://www.w3.org/1999/XMLSchema">
+    <import namespace="http://www.w3.org/1999/XMLSchema"/>
+    <element name="DataSet" nullable="true">
+      <complexType>
+        <element ref="schema"/>
+        <any/>
+      </complexType>
+    </element>
+  </schema>
+</serviceDescription>

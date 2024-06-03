@@ -1,0 +1,102 @@
+<html>
+<head>
+<TITLE>VistaVacations Installation</TITLE>
+<link rel="stylesheet" type="text/css" href="Vista_Install.css">
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+<!--
+
+Function CleanFilePath(Path)
+    
+    Dim nLast
+    
+    Path=Mid(Path,9,255)
+    nLast = InStrRev(Path,"/")
+    Path=Left(Path,nlast-1)
+    Path=Replace(Path,"/","\")
+    CleanFilePath=Path
+    
+End Function
+
+Function CleanFilePath2(Path)
+    
+    if right(Path,1) <> "\" then
+		Path = Path & "\"
+	end if
+    CleanFilePath2=Path
+    
+End Function
+-->
+</SCRIPT>
+</head>
+<body background="WebSite/VistaVacations/img/sitebkgrd.gif">
+
+<table WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <tr>
+        <td width="130" class="MenuLink">
+            <IMG src="WebSite/VistaVacations/img/logo.gif">
+            <p align="center">Installation</p>
+        </td>
+        <td width="110">&nbsp;</td>
+        <td width="*">
+            <H2>Step 1: Install the Database</H2>
+            <hr noshade>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td valign="top">
+      <P>Fill out the SQL Server data file location, System Administrator user name, and System Administrator password and 
+      press the "Execute" button. </P>
+      <TABLE cellSpacing=0 cellPadding=0 width="75%" border=0>
+        <TR>
+          <TD>SQLServer Data Path</TD>
+          <TD><INPUT id=Text1 name=DataPath value="C:\MSSQL7\DATA\"></TD></TR>
+        <TR>        
+        <TR>
+          <TD>System Administrator</TD>
+          <TD><INPUT id=sysadmin name=sysadmin value="sa"></TD></TR>
+        <TR>
+          <TD>Password</TD>
+          <TD><INPUT type="password" id=sqlpass name=sqlpass ></TD></TR>
+        <TR>
+        <TR>
+          <TD><INPUT type="button" id=button1 name=button1 value="Execute" onclick="InstallDB()"></TD></TR>
+        <TR>
+          <TD>&nbsp;</TD>
+          <TD>
+                <SCRIPT LANGUAGE="vbscript">
+					function InstallDB()
+						dim Shell
+						dim FullPath
+						dim Password
+						dim UserID
+						
+						FullPath = CleanFilePath(window.location)
+						if sqlpass.value = "" then
+							Password = cstr(Chr(34) & Chr(34))
+						else
+							Password = sqlpass.value
+						end if
+						UserID = sysadmin.value
+						Set Shell = CreateObject("WScript.Shell")
+						
+						Shell.Run(FullPath & "\DBSetup.bat " & UserID & " " & Password & " " & CleanFilePath2(DataPath.value) & " " & FullPath)
+						
+						set Shell = nothing
+					
+					end function
+                </SCRIPT>
+            </TD>
+        </TR>
+    </TABLE>
+           <p><A href="Install2.htm"><B>Proceed to Step 2</B></A></p><!-- end content -->
+
+        </td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

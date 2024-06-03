@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.vb" Inherits="LodgingMgr.Global" %>

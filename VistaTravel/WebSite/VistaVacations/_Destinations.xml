@@ -1,0 +1,248 @@
+<root>
+<schema id="DocumentElement" targetNamespace="" xmlns="http://www.w3.org/1999/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <element name="ActivityLocation">
+        <complexType content="elementOnly">
+            <element name="ActivityLocationID" type="int"></element>
+            <element name="LocationName" minOccurs="0" type="string"></element>
+            <element name="Address" minOccurs="0" type="string"></element>
+            <element name="PostalCode" minOccurs="0" type="string"></element>
+            <element name="City" minOccurs="0" type="string"></element>
+            <element name="Region" minOccurs="0" type="string"></element>
+            <element name="StateAbbr" minOccurs="0" type="string"></element>
+            <element name="CountryAbbr" minOccurs="0" type="string"></element>
+            <element name="Continent" minOccurs="0" type="string"></element>
+            <element name="Rating" minOccurs="0" type="decimal"></element>
+            <element name="ActivityID" type="int"></element>
+            <element name="Name" type="string"></element>
+            <element name="Description" type="string"></element>
+            <element name="ReservationRequired" minOccurs="0" type="boolean"></element>
+            <element name="Price" msdata:DataType="System.Currency" minOccurs="0" type="string"></element>
+            <element name="StartDate" minOccurs="0" type="timeInstant"></element>
+            <element name="EndDate" minOccurs="0" type="timeInstant"></element>
+            <element name="KeyAttraction" minOccurs="0" type="boolean"></element>
+            <element name="ServicesOffered" minOccurs="0" type="boolean"></element>
+            <element name="RequiredTime" minOccurs="0" type="string"></element>
+            <element name="LocalInfoDetails" minOccurs="0" type="string"></element>
+            <element name="DiningAvailable" minOccurs="0" type="boolean"></element>
+        </complexType>
+    </element>
+</schema>
+<DocumentElement>
+    <ActivityLocation>
+        <ActivityLocationID>1</ActivityLocationID>
+        <LocationName>Heavenly</LocationName>
+        <Address>100 Stateline Road</Address>
+        <PostalCode>60601</PostalCode>
+        <City>Reno</City>
+        <Region>Lake Tahoe</Region>
+        <StateAbbr>CA</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>5</Rating>
+        <ActivityID>2</ActivityID>
+        <Name>Ski at Heavenly</Name>
+        <Description>Enjoy killer skiing</Description>
+        <ReservationRequired>False</ReservationRequired>
+        <Price>0</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>True</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>8         </RequiredTime>
+        <LocalInfoDetails>Stay away from the trees</LocalInfoDetails>
+        <DiningAvailable>False</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>1</ActivityLocationID>
+        <LocationName>Heavenly</LocationName>
+        <Address>100 Stateline Road</Address>
+        <PostalCode>60601</PostalCode>
+        <City>Reno</City>
+        <Region>Lake Tahoe</Region>
+        <StateAbbr>CA</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>5</Rating>
+        <ActivityID>3</ActivityID>
+        <Name>Heavenly Snack Bar</Name>
+        <Description>Lunch and dinner</Description>
+        <ReservationRequired>False</ReservationRequired>
+        <Price>0</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>False</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>1         </RequiredTime>
+        <LocalInfoDetails>Don't get the chili</LocalInfoDetails>
+        <DiningAvailable>True</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>2</ActivityLocationID>
+        <LocationName>Pebble Beach</LocationName>
+        <Address>322 Pebble Beach Road</Address>
+        <PostalCode>39321</PostalCode>
+        <City>Reno</City>
+        <Region>Lake Tahoe</Region>
+        <StateAbbr>NV</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>5</Rating>
+        <ActivityID>4</ActivityID>
+        <Name>Golf Course 1</Name>
+        <Description>18 holes</Description>
+        <ReservationRequired>True</ReservationRequired>
+        <Price>100</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>False</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>4         </RequiredTime>
+        <LocalInfoDetails>Don't miss the greens to the left</LocalInfoDetails>
+        <DiningAvailable>False</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>2</ActivityLocationID>
+        <LocationName>Pebble Beach</LocationName>
+        <Address>322 Pebble Beach Road</Address>
+        <PostalCode>39321</PostalCode>
+        <City>Reno</City>
+        <Region>Lake Tahoe</Region>
+        <StateAbbr>NV</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>5</Rating>
+        <ActivityID>5</ActivityID>
+        <Name>Course Restaurant</Name>
+        <Description>Great steaks</Description>
+        <ReservationRequired>True</ReservationRequired>
+        <Price>0</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>True</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>1         </RequiredTime>
+        <LocalInfoDetails>Get the blueberry pancakes</LocalInfoDetails>
+        <DiningAvailable>True</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>6</ActivityLocationID>
+        <LocationName>Jim's Restaurant</LocationName>
+        <Address>492 North Ave</Address>
+        <PostalCode>33333</PostalCode>
+        <City>Reno</City>
+        <Region>Lake Tahoe</Region>
+        <StateAbbr>NV</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>5</Rating>
+        <ActivityID>7</ActivityID>
+        <Name>Eat at Jim's</Name>
+        <Description>OK Restaurant</Description>
+        <ReservationRequired>True</ReservationRequired>
+        <Price>0</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>False</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>1         </RequiredTime>
+        <LocalInfoDetails>Nachos are good</LocalInfoDetails>
+        <DiningAvailable>True</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>2</ActivityLocationID>
+        <LocationName>Pebble Beach</LocationName>
+        <Address>322 Pebble Beach Road</Address>
+        <PostalCode>39321</PostalCode>
+        <City>Reno</City>
+        <Region>Lake Tahoe</Region>
+        <StateAbbr>NV</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>5</Rating>
+        <ActivityID>11</ActivityID>
+        <Name>Golf Course 2</Name>
+        <Description>18 holes</Description>
+        <ReservationRequired>True</ReservationRequired>
+        <Price>100</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>False</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>4         </RequiredTime>
+        <LocalInfoDetails>Don't miss the greens to the left</LocalInfoDetails>
+        <DiningAvailable>False</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>3</ActivityLocationID>
+        <LocationName>SnowCap</LocationName>
+        <Address>808 Snow Lane</Address>
+        <PostalCode>98444</PostalCode>
+        <City>Vail</City>
+        <Region>Vail</Region>
+        <StateAbbr>CO</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>4</Rating>
+        <ActivityID>1</ActivityID>
+        <Name>Snowboard at SnowCap</Name>
+        <Description>Enjoy killer boarding</Description>
+        <ReservationRequired>False</ReservationRequired>
+        <Price>0</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>False</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>8         </RequiredTime>
+        <LocalInfoDetails>Stay away from the trees</LocalInfoDetails>
+        <DiningAvailable>False</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>3</ActivityLocationID>
+        <LocationName>SnowCap</LocationName>
+        <Address>808 Snow Lane</Address>
+        <PostalCode>98444</PostalCode>
+        <City>Vail</City>
+        <Region>Vail</Region>
+        <StateAbbr>CO</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>4</Rating>
+        <ActivityID>9</ActivityID>
+        <Name>Ski at SnowCap</Name>
+        <Description>Skiing</Description>
+        <ReservationRequired>False</ReservationRequired>
+        <Price>0</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>True</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>8         </RequiredTime>
+        <LocalInfoDetails>Stay away from the trees</LocalInfoDetails>
+        <DiningAvailable>False</DiningAvailable>
+    </ActivityLocation>
+    <ActivityLocation>
+        <ActivityLocationID>8</ActivityLocationID>
+        <LocationName>Big Pine</LocationName>
+        <Address>100 Big Pine Road</Address>
+        <PostalCode>1111</PostalCode>
+        <City>Vail</City>
+        <Region>Vail</Region>
+        <StateAbbr>CO</StateAbbr>
+        <CountryAbbr>USA</CountryAbbr>
+        <Continent>North America</Continent>
+        <Rating>4</Rating>
+        <ActivityID>12</ActivityID>
+        <Name>Big Pine Skiing</Name>
+        <Description>Snowboarding</Description>
+        <ReservationRequired>False</ReservationRequired>
+        <Price>0</Price>
+        <StartDate>1999-01-19T08:00:00</StartDate>
+        <EndDate>2003-01-15T08:00:00</EndDate>
+        <KeyAttraction>False</KeyAttraction>
+        <ServicesOffered>True</ServicesOffered>
+        <RequiredTime>6         </RequiredTime>
+        <LocalInfoDetails>Stay away from the trees</LocalInfoDetails>
+        <DiningAvailable>False</DiningAvailable>
+    </ActivityLocation>
+</DocumentElement>
+</root>

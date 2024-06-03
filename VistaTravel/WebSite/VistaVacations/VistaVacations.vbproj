@@ -1,0 +1,501 @@
+<VisualStudioProject>
+    <VisualBasic ProjectType = "Web" >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                ApplicationRoot = "true"
+                AssemblyBuildNumber = "0"
+                AssemblyCopyright = ""
+                AssemblyCulture = ""
+                AssemblyDescription = ""
+                AssemblyKeyContainerName = ""
+                AssemblyMajorVersion = "1"
+                AssemblyMinorVersion = "0"
+                AssemblyName = "VistaVacations"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                AssemblyProduct = ""
+                AssemblyRevisionNumber = "0"
+                AssemblyTitle = ""
+                AssemblyTrademark = ""
+                AssemblyCompany = ""
+                ClsCompliant = "true"
+                DefaultClientScript = "JScript"
+                DefaultDTCPlatform = "Server"
+                DefaultHTMLPageLayout = "Linear"
+                DefaultTargetSchema = "HTML32"
+                DefaultServerScript = "VBScript"
+                DefaultSessionState = "True"
+                GenerateRevisionNumber = "true"
+                NoStandardLibraries = "false"
+                OutputType = "Library"
+                OptionStrict = "true"
+                RootNamespace = "VistaVacations"
+                StartupObject = ""
+                TreatWarningsAsErrors = "false"
+                WarningLevel = "1"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnroundedFloatingPoint = "false"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "0"
+                    CheckForOverflowUnderflow = "false"
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    IncrementalBuild = "false"
+                    NoLogo = "true"
+                    NoOutput = "false"
+                    Optimize = "false"
+                    OutputPath = ".\bin\"
+                    RemoveFloatingPointChecks = "false"
+                    RemoveIntegerChecks = "false"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnroundedFloatingPoint = "false"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "0"
+                    CheckForOverflowUnderflow = "false"
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "false"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    NoLogo = "true"
+                    NoOutput = "false"
+                    Optimize = "false"
+                    OutputPath = ".\bin\"
+                    RemoveFloatingPointChecks = "false"
+                    RemoveIntegerChecks = "false"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    Path = "System.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.ComponentModel.Design"
+                    AssemblyName = "System.ComponentModel.Design"
+                    Path = "System.ComponentModel.Design.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    Path = "System.Web.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Web.UI.Design"
+                    AssemblyName = "System.Web.UI.Design"
+                    Path = "System.Web.UI.Design.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    Path = "System.Drawing.DLL"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    Path = "System.Data.DLL"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    Path = "System.Web.Services.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Diagnostics"
+                    AssemblyName = "System.Diagnostics"
+                    Path = "System.Diagnostics.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Configuration"
+                    AssemblyName = "System.Configuration"
+                    Path = "System.Configuration.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "0"
+                    VersionMinor = "0"
+                    Revision = "0"
+                    Build = "0"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "Microsoft.Win32.Interop"
+                    AssemblyName = "Microsoft.Win32.Interop"
+                    Path = "Microsoft.Win32.Interop.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.XML.Serialization"
+                    AssemblyName = "System.Xml.Serialization"
+                    Path = "System.XML.Serialization.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Messaging"
+                    AssemblyName = "System.Messaging"
+                    Path = "System.Messaging.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "crengine"
+                    AssemblyName = "crengine"
+                    Path = "crengine.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "0"
+                    VersionMinor = "0"
+                    Revision = "0"
+                    Build = "0"
+                />
+                <Reference
+                    Name = "VistaSiteMgr"
+                    AssemblyName = "VistaSiteMgr"
+                    Path = "VistaSiteMgr.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Revision = "0"
+                    Build = "0"
+                />
+                <Reference
+                    Name = "CRWebFormViewer"
+                    AssemblyName = "CRWebFormViewer"
+                    Path = "CRWebFormViewer.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "0"
+                    VersionMinor = "0"
+                    Revision = "0"
+                    Build = "0"
+                    Originator = "1"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "About.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "About.vb"
+                    DependentUpon = "About.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BookTrip.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "BookTrip.vb"
+                    DependentUpon = "BookTrip.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Complete.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Complete.vb"
+                    DependentUpon = "Complete.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Config.web"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Confirmation.aspx"
+                    BuildAction = "Content"
+                    Generator = "g"
+                />
+                <File
+                    RelPath = "Confirmation.vb"
+                    DependentUpon = "Confirmation.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.vb"
+                    DependentUpon = "Global.asax"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Index.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Index.vb"
+                    DependentUpon = "Index.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Itinerary.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Itinerary.vb"
+                    DependentUpon = "Itinerary.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NotImplemented.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "NotImplemented.vb"
+                    DependentUpon = "NotImplemented.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Options.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Options.vb"
+                    DependentUpon = "Options.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Profile.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Profile.vb"
+                    DependentUpon = "Profile.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "TravelOptions.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "TravelOptions.vb"
+                    DependentUpon = "TravelOptions.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TravelOptions2.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "TravelOptions2.vb"
+                    DependentUpon = "TravelOptions2.aspx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VistaVacations.disco"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\arrow.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\background.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\bookingescape.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\booktrip.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\cabosanlucas.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\curve.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\day.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\dinneroptions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\editprofile.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\escapenow.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\escapeplans.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\featuredtips.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\gobutton.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\grandcanyon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\itinerary.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\k2fattybag.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\k2leatherglove.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\leftpic.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\rounder.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\skitahoe.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\sqcccccc.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\sqccccff.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\travelacc.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\travelhelpers.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\week.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "img\whentravelling.gif"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

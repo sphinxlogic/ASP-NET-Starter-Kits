@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<serviceDescription xmlns:s0="urn:AirlineServiceService-service" name="AirlineServiceServiceService" targetNamespace="" xmlns="urn:schemas-xmlsoap-org:sdl.2000-01-25">
+  <soap xmlns="urn:schemas-xmlsoap-org:soap-sdl-2000-01-25">
+    <service>
+      <addresses>
+        <address uri="http://localhost/AirlineService/AirlineService.dll?Handler=Default"/>
+      </addresses>
+      <requestResponse name="FindFlight" soapAction="#FindFlight">
+        <request ref="s0:FindFlight"/>
+        <response ref="s0:FindFlightResponse"/>
+      </requestResponse>
+      <requestResponse name="BookFlight" soapAction="#BookFlight">
+        <request ref="s0:BookFlight"/>
+        <response ref="s0:BookFlightResponse"/>
+      </requestResponse>
+    </service>
+  </soap>
+  <schema targetNamespace="urn:AirlineServiceService-service" xmlns="http://www.w3.org/1999/XMLSchema">
+    <element name="FindFlight">
+      <complexType content="elementOnly">
+        <element name="DepartCity" type="string"/>
+        <element name="Destination" type="string"/>
+        <element name="Airline" type="string"/>
+      </complexType>
+    </element>
+    <element name="FindFlightResponse">
+      <complexType content="elementOnly">
+        <element name="return" type="string"/>
+      </complexType>
+    </element>
+    <element name="BookFlight">
+      <complexType content="elementOnly">
+        <element name="FlightID" type="int"/>
+        <element name="CustomerName" type="string"/>
+        <element name="BillingAddress" type="string"/>
+        <element name="BillingCity" type="string"/>
+        <element name="BillingState" type="string"/>
+        <element name="BillingZip" type="string"/>
+        <element name="FFNumber" type="string"/>
+        <element name="Cost" type="double"/>
+        <element name="Seat" type="string"/>
+      </complexType>
+    </element>
+    <element name="BookFlightResponse">
+      <complexType content="elementOnly">
+        <element name="return" type="int"/>
+      </complexType>
+    </element>
+  </schema>
+</serviceDescription>

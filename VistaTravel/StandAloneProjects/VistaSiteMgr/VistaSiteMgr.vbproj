@@ -1,0 +1,300 @@
+<VisualStudioProject>
+    <VisualBasic ProjectType = "Local" >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                ApplicationRoot = "true"
+                AssemblyBuildNumber = "0"
+                AssemblyCopyright = ""
+                AssemblyCulture = ""
+                AssemblyDescription = ""
+                AssemblyKeyContainerName = ""
+                AssemblyMajorVersion = "1"
+                AssemblyMinorVersion = "0"
+                AssemblyName = "VistaSiteMgr"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                AssemblyProduct = ""
+                AssemblyRevisionNumber = "0"
+                AssemblyTitle = ""
+                AssemblyTrademark = ""
+                AssemblyCompany = ""
+                ClsCompliant = "true"
+                DefaultClientScript = "JScript"
+                DefaultDTCPlatform = "Server"
+                DefaultHTMLPageLayout = "Linear"
+                DefaultTargetSchema = "HTML32"
+                DefaultServerScript = "VBScript"
+                DefaultSessionState = "True"
+                GenerateRevisionNumber = "true"
+                NoStandardLibraries = "false"
+                OutputType = "Library"
+                OptionStrict = "true"
+                RootNamespace = "VistaSiteMgr"
+                StartupObject = ""
+                TreatWarningsAsErrors = "false"
+                WarningLevel = "1"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnroundedFloatingPoint = "false"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "0"
+                    CheckForOverflowUnderflow = "false"
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "false"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    NoLogo = "true"
+                    NoOutput = "false"
+                    Optimize = "false"
+                    OutputPath = ".\bin\"
+                    RemoveFloatingPointChecks = "false"
+                    RemoveIntegerChecks = "false"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnroundedFloatingPoint = "false"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "0"
+                    CheckForOverflowUnderflow = "false"
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "false"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    NoLogo = "true"
+                    NoOutput = "false"
+                    Optimize = "false"
+                    OutputPath = ".\bin\"
+                    RemoveFloatingPointChecks = "false"
+                    RemoveIntegerChecks = "false"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    Path = "System.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.ComponentModel.Design"
+                    AssemblyName = "System.ComponentModel.Design"
+                    Path = "System.ComponentModel.Design.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    Path = "System.Drawing.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    Path = "System.Data.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    Path = "System.Web.Services.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Configuration"
+                    AssemblyName = "System.Configuration"
+                    Path = "System.Configuration.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "0"
+                    VersionMinor = "0"
+                    Revision = "0"
+                    Build = "0"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.Diagnostics"
+                    AssemblyName = "System.Diagnostics"
+                    Path = "System.Diagnostics.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "Microsoft.Win32.Interop"
+                    AssemblyName = "Microsoft.Win32.Interop"
+                    Path = "Microsoft.Win32.Interop.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "System.XML.Serialization"
+                    AssemblyName = "System.Xml.Serialization"
+                    Path = "System.XML.Serialization.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2000"
+                    VersionMinor = "14"
+                    Revision = "1812"
+                    Build = "10"
+                    Originator = "1"
+                />
+                <Reference
+                    Name = "MSXML2"
+                    AssemblyName = "MSXML2"
+                    Path = "bin\MSXML2.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "2"
+                    VersionMinor = "6"
+                    Revision = "0"
+                    Build = "0"
+                />
+                <Reference
+                    Name = "Pricing"
+                    AssemblyName = "Pricing"
+                    Path = "bin\Pricing.dll"
+                    Guid = "{00000000-0000-0000-0000-000000000000}"
+                    Lcid = "0"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Revision = "156"
+                    Build = "42185"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "Activity.sdl"
+                    BuildAction = "Content"
+                    Generator = "MSSDLCodeGenerator"
+                    LastGenOutput = "Activity.vb"
+                />
+                <File
+                    RelPath = "Activity.vb"
+                    DependentUpon = "Activity.sdl"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "AirlineService.sdl"
+                    BuildAction = "Content"
+                    Generator = "MSSDLCodeGenerator"
+                    LastGenOutput = "AirlineService.vb"
+                />
+                <File
+                    RelPath = "AirlineService.vb"
+                    DependentUpon = "AirlineService.sdl"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "General.vb"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Itinerary.vb"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ItineraryDetail.vb"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LodgingReservation.sdl"
+                    BuildAction = "Content"
+                    Generator = "MSSDLCodeGenerator"
+                    LastGenOutput = "LodgingReservation.vb"
+                />
+                <File
+                    RelPath = "LodgingReservation.vb"
+                    DependentUpon = "LodgingReservation.sdl"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Member.vb"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MemberPref.vb"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Order.sdl"
+                    BuildAction = "Content"
+                    Generator = "MSSDLCodeGenerator"
+                    LastGenOutput = "Order.vb"
+                />
+                <File
+                    RelPath = "Order.vb"
+                    DependentUpon = "Order.sdl"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Reference.map"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "TotalPrice.vb"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

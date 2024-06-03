@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AirlineService", "AirlineService.vcproj", "{A0C11D0C-0AF7-44E6-A727-C53C4DD7C257}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+	ProjectSection(SolutionConfiguration) = postProject
+		Debug.ActiveCfg = Debug|Win32
+		Debug.Build.0 = Debug|Win32
+		Release.ActiveCfg = Release|Win32
+		Release.Build.0 = Release|Win32
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AirlineServiceIsapi", "..\AirlineServiceIsapi\AirlineServiceIsapi.vcproj", "{98608080-2133-4D8C-95E5-ADFEFE0D7110}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+	ProjectSection(SolutionConfiguration) = postProject
+		Debug.ActiveCfg = Debug|Win32
+		Debug.Build.0 = Debug|Win32
+		Release.ActiveCfg = Release|Win32
+		Release.Build.0 = Release|Win32
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Release
+		ConfigName.1 = Debug
+		DoSign = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

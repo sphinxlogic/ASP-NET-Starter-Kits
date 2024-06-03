@@ -1,0 +1,55 @@
+BODY
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Verdana, Arial
+    FONT-WEIGHT: normal;
+
+}
+P
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Verdana, Arial
+}
+A
+{
+    FONT-SIZE: 9pt;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial;
+}
+A.Subtle
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial;
+}
+
+A.MenuLink:link
+{
+    FONT-SIZE: 9pt;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.MenuLink:hover
+{
+    FONT-SIZE: 9pt;
+    COLOR: #ffcc00;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+.MenuLink
+{
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: none
+}
+LI
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Verdana, Arial
+}
+TD
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Verdana, Arial
+}

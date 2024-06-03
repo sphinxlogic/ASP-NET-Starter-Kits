@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>VistaVacations Installation</title>
+<link rel="stylesheet" type="text/css" href="Vista_Install.css">
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+<!--
+
+Function CleanFilePath(Path)
+    
+    Dim nLast
+    
+    Path=Mid(Path,9,255)
+    nLast = InStrRev(Path,"/")
+    Path=Left(Path,nlast-1)
+    Path=Replace(Path,"/","\")
+    CleanFilePath=Path
+    
+End Function
+
+Function CleanFilePath2(Path)
+
+    if right(Path,1) <> "\" then
+		Path = Path & "\"
+	end if
+    CleanFilePath2=Path
+    
+End Function
+-->
+</SCRIPT>
+</head>
+<body background="WebSite/VistaVacations/img/sitebkgrd.gif">
+
+<table WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <tr>
+        <td width="130" class="MenuLink">
+            <IMG src="WebSite/VistaVacations/img/logo.gif">
+            <p align="center">Installation</p>
+        </td>
+        <td width="110">&nbsp;</td>
+        <td width="*">
+            <H2>Step 2: Install the VistaVacations Web</H2>
+            <hr noshade>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td valign="top">
+ 
+      <p> Now that the databases&nbsp;are installed successfully, press the button below to
+      add the&nbsp; <b>VistaVacations</b> Web and related web 
+      services&nbsp;to this machine.</p>
+              
+      <p><i>Enter the location of your WWWRoot Directory:</i></p>
+	  <p><input type="text" id="wwwrootdir" name="wwwrootdir" value="C:\InetPub\wwwroot\"></p>
+	  <p><input type="button" id=button1 name=button1 onclick="SetupWeb()" value="Execute">
+	  <script language=vbscript>
+			function SetupWeb()
+				dim Shell
+				dim FullPath
+				dim WebPath
+								
+				FullPath = CleanFilePath(window.location)
+				WebPath = CleanFilePath2(wwwrootdir.value)
+				Set Shell = CreateObject("WScript.Shell")
+				
+				Shell.Run(FullPath & "\WebSetup.bat " & WebPath & " " & FullPath)
+				
+				set Shell = nothing
+			end function
+	  </script>		              
+           <p><A href="Install_final.htm"><B>Finish</B></A></p><!-- end content -->
+        </td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<configuration>
+    
+    <configsections>
+        <add name="authentication" type="System.Web.Configuration.SingleTagSectionHandler" />
+        <add name="tracing" type="System.Web.Configuration.SingleTagSectionHandler" />
+    </configsections>    
+    
+    <compilation debugmode="true" />
+
+    <tracing
+        enabled="false"
+        requestlimit="0"
+        pageoutput="false"
+    />
+
+    <authentication mode="None" /> <!-- Possible values for mode: Windows, Cookie, Passport, None (Empty String) -->
+
+    <customerrors mode="Off" /> <!-- Possible values for mode: On, Off, RemoteOnly -->
+
+    <sessionstate 
+            inproc="true" 
+            usesqlserver="false" 
+            cookieless="false" 
+            timeout="20" 
+            server="localhost" 
+            port="42424" 
+    />
+
+</configuration>

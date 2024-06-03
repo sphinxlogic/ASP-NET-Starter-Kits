@@ -1,0 +1,8 @@
+; AirlineServiceIsapi.def : declares the module parameters for the DLL.
+
+LIBRARY	     "AirlineServiceIsapi"
+
+EXPORTS
+	HttpExtensionProc
+	GetExtensionVersion
+	TerminateExtension

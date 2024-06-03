@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<serviceDescription xmlns:s0="http://tempuri.org/main.xsd" xmlns:s1="" name="LodgingReservation" targetNamespace="" xmlns="urn:schemas-xmlsoap-org:sdl.2000-01-25">
+  <soap xmlns="urn:schemas-xmlsoap-org:soap-sdl-2000-01-25">
+    <service>
+      <addresses>
+        <address uri="http://localhost/LodgingMgr/LodgingReservation.asmx"/>
+      </addresses>
+      <requestResponse name="Browse" soapAction="http://tempuri.org/Browse">
+        <request ref="s0:Browse"/>
+        <response ref="s0:BrowseResult"/>
+      </requestResponse>
+      <requestResponse name="Load" soapAction="http://tempuri.org/Load">
+        <request ref="s0:Load"/>
+        <response ref="s0:LoadResult"/>
+      </requestResponse>
+      <requestResponse name="Create" soapAction="http://tempuri.org/Create">
+        <request ref="s0:Create"/>
+        <response ref="s0:CreateResult"/>
+      </requestResponse>
+      <requestResponse name="Save" soapAction="http://tempuri.org/Save">
+        <request ref="s0:Save"/>
+        <response ref="s0:SaveResult"/>
+      </requestResponse>
+    </service>
+  </soap>
+  <httppost xmlns="urn:schemas-xmlsoap-org:post-sdl-2000-01-25">
+    <service>
+      <requestResponse name="Browse" href="http://localhost/LodgingMgr/LodgingReservation.asmx/Browse">
+        <request>
+          <form>
+            <input name="City"/>
+            <input name="State"/>
+            <input name="RateLimit"/>
+            <input name="TravelDate"/>
+            <input name="Chain"/>
+          </form>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="Load" href="http://localhost/LodgingMgr/LodgingReservation.asmx/Load">
+        <request>
+          <form>
+            <input name="ConfirmationNumber"/>
+          </form>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="Create" href="http://localhost/LodgingMgr/LodgingReservation.asmx/Create">
+        <request>
+          <form/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+    </service>
+  </httppost>
+  <httpget xmlns="urn:schemas-xmlsoap-org:get-sdl-2000-01-25">
+    <service>
+      <requestResponse name="Browse" href="http://localhost/LodgingMgr/LodgingReservation.asmx/Browse">
+        <request>
+          <param name="City"/>
+          <param name="State"/>
+          <param name="RateLimit"/>
+          <param name="TravelDate"/>
+          <param name="Chain"/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="Load" href="http://localhost/LodgingMgr/LodgingReservation.asmx/Load">
+        <request>
+          <param name="ConfirmationNumber"/>
+        </request>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+      <requestResponse name="Create" href="http://localhost/LodgingMgr/LodgingReservation.asmx/Create">
+        <request/>
+        <response>
+          <mimeXml ref="s1:DataSet"/>
+        </response>
+      </requestResponse>
+    </service>
+  </httpget>
+  <schema targetNamespace="http://tempuri.org/main.xsd" xmlns="http://www.w3.org/1999/XMLSchema">
+    <import namespace="http://www.w3.org/1999/XMLSchema"/>
+    <element name="Browse">
+      <complexType>
+        <element name="City" type="string" nullable="true"/>
+        <element name="State" type="string" nullable="true"/>
+        <element name="RateLimit" type="double"/>
+        <element name="TravelDate" type="timeInstant"/>
+        <element name="Chain" type="string" nullable="true"/>
+      </complexType>
+    </element>
+    <element name="BrowseResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="Load">
+      <complexType>
+        <element name="ConfirmationNumber" type="long"/>
+      </complexType>
+    </element>
+    <element name="LoadResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="Create">
+      <complexType/>
+    </element>
+    <element name="CreateResult">
+      <complexType>
+        <element name="result" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="Save">
+      <complexType>
+        <element name="ReservationInfo" nullable="true">
+          <complexType>
+            <element ref="schema"/>
+            <any/>
+          </complexType>
+        </element>
+      </complexType>
+    </element>
+    <element name="SaveResult">
+      <complexType>
+        <element name="result" type="long"/>
+      </complexType>
+    </element>
+  </schema>
+  <schema targetNamespace="" xmlns="http://www.w3.org/1999/XMLSchema">
+    <import namespace="http://www.w3.org/1999/XMLSchema"/>
+    <element name="DataSet" nullable="true">
+      <complexType>
+        <element ref="schema"/>
+        <any/>
+      </complexType>
+    </element>
+  </schema>
+</serviceDescription>
